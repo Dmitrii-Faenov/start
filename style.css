@@ -2,6 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
 
+:root {
+    /* Fonts */
+    --heading-1: 700 40px/125% "Crimson Text", serif;
+    --heading-2: 700 32px/125% "Crimson Text", serif;
+    --heading-3: 700 28px/125% "Crimson Text", serif;
+    --heading-4: 700 24px/125% "Crimson Text", serif;
+    --heading-5: 700 20px/125% "Crimson Text", serif;
+    --heading-6: 700 16px/125% "Crimson Text", serif;
+    --sub-heading: 20px/125% "Work Sans", sans-serif;
+    --label: 700 16px/125% "Work Sans", sans-serif;
+    --body: 15px/125% "Work Sans", sans-serif;
+    --body-bold: 700 15px/125% "Work Sans", sans-serif;
+
+    /* Colors */
+    --1st-color-100: rgba(116, 198, 157, 1.0);
+    --1st-color-75: rgba(116, 198, 157, 0.75);
+    --1st-color-50: rgba(116, 198, 157, 0.50);
+    --1st-color-25: rgba(116, 198, 157, 0.25);
+    --2nd-color-100: rgba(33, 37, 41, 1.0);
+    --2nd-color-75: rgba(33, 37, 41, 0.75);
+    --2nd-color-50: rgba(33, 37, 41, 0.50);
+    --2nd-color-25: rgba(33, 37, 41, 0.25);
+    --3th-color-100: rgba(255, 255, 255, 1.0);
+    --3th-color-75: rgba(255, 255, 255, 0.75);
+    --3th-color-50: rgba(255, 255, 255, 0.50);
+    --3th-color-25: rgba(255, 255, 255, 0.25);
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -42,9 +70,19 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    display: inline-block;
+    padding: 13px 29.5px 10px;
+    background-color: var(--2nd-color-100);
+    color: var(--3th-color-100);
+    border-radius: 5px;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .header {
-    background-color: #74C69D;
-    color: #fff;
+    background-color: var(--1st-color-100);
+    color: var(--3th-color-100);
     padding: 0 0 82.87px 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -53,12 +91,14 @@ body {
 
 .logo__container {
     display: flex;
+    align-items: center;
 }
 
-.logo {}
+.logo {
+    margin: 0 18px 0 0;
+}
 
 .logo__text {
-    color: #fff;
     font-weight: 500;
     font-size: 40px;
 }
@@ -81,8 +121,8 @@ body {
 }
 
 .nav__link {
-    font-size: 20px;
-    color: #fff;
+    font: var(--sub-heading);
+    color: var(--3th-color-100);
 }
 
 .header__main {
@@ -96,30 +136,63 @@ body {
 }
 
 .header__label {
-    font-weight: 500;
+    font: var(--label);
     letter-spacing: 5px;
     margin: 0 0 15px 0;
 }
 
 .header__heading {
-    font-family: "Crimson Text", serif;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0 0 15px 0;
+    font: var(--heading-1);
 }
 
 .header__text {
-    font-size: 15px;
+    font: var(--body);
     opacity: 75%;
     margin: 0 0 25px 0;
 }
 
 .header__btn {
-    display: inline-block;
-    font-size: 20px;
+    color: #000;
     padding: 13px 48.5px 10px 47.5px;
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: var(--3th-color-100);
 }
 
 .header__image {}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main {}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.partners {
+    text-align: center;
+    padding: 60px 0 73px 0;
+}
+.partners__info-block {
+    width: 403px;
+    margin: 0 auto 55px auto;
+}
+.partners__info-block > *:not(:last-child) {
+    margin: 0 0 16px 0;
+}
+.partners__label {
+    font: var(--label);
+    text-transform: uppercase;
+    color: var(--1st-color-100);
+    margin: 0 0 16px 0;
+}
+.partners__heading {
+    font: var(--heading-1);
+}
+.partners__sub-heading {
+    font: var(--sub-heading);
+}
+.partners__images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 55px 0;
+}
+.partners__image {}
+.partners__btn {}
