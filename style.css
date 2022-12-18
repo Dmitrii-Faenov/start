@@ -86,6 +86,19 @@ h2 {
     font: var(--heading-1);
 }
 
+.heading {
+    font: var(--heading-1);
+}
+
+.label {
+    font: var(--label);
+    letter-spacing: var(--label-ls);
+}
+
+.sub-heading {
+    font: var(--sub-heading);
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .header {
