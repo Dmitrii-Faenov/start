@@ -12,6 +12,7 @@
     --heading-6: 700 16px/125% "Crimson Text", serif;
     --sub-heading: 20px/125% "Work Sans", sans-serif;
     --label: 700 16px/125% "Work Sans", sans-serif;
+    --label-ls: 5px;
     --body: 15px/125% "Work Sans", sans-serif;
     --body-bold: 700 15px/125% "Work Sans", sans-serif;
 
@@ -61,7 +62,7 @@ h6 {
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
+    font: var(--body);
     margin: 0;
 }
 
@@ -76,6 +77,13 @@ body {
     background-color: var(--2nd-color-100);
     color: var(--3th-color-100);
     border-radius: 5px;
+    font: var(--sub-heading);
+}
+h1 {
+    font: var(--heading-1);
+}
+h2 {
+    font: var(--heading-1);
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -85,6 +93,7 @@ body {
     color: var(--3th-color-100);
     padding: 0 0 82.87px 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0 60px 0;
 }
 
 .header__container {}
@@ -137,7 +146,7 @@ body {
 
 .header__label {
     font: var(--label);
-    letter-spacing: 5px;
+    letter-spacing: var(--label-ls);
     margin: 0 0 15px 0;
 }
 
@@ -167,7 +176,7 @@ body {
 
 .partners {
     text-align: center;
-    padding: 60px 0 73px 0;
+    margin: 0 0 73px 0;
 }
 .partners__info-block {
     width: 403px;
@@ -178,6 +187,7 @@ body {
 }
 .partners__label {
     font: var(--label);
+    letter-spacing: var(--label-ls);
     text-transform: uppercase;
     color: var(--1st-color-100);
     margin: 0 0 16px 0;
@@ -195,4 +205,70 @@ body {
     margin: 0 0 55px 0;
 }
 .partners__image {}
+
 .partners__btn {}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.support {
+    margin: 0 0 73.57px 0;
+}
+
+.support__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suuport__image {}
+
+.support__text-block {
+    width: 452px;
+}
+
+.support__text-block > *:not(:last-child) {
+    margin: 0 0 16px 0;
+}
+
+.support__heading {
+    font: var(--heading-1);
+}
+
+.support__text {
+    font: var(--body);
+}
+
+.suport__btn {
+    font: var(--sub-heading);
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.setting {
+    margin: 0 0 102.27px 0;
+}
+
+.setting__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting__text-block {
+    width: 452px;
+}
+
+.setting__text-block>*:not(:last-child) {
+    margin: 0 0 16px 0;
+}
+
+.setting__heading {
+}
+
+.setting__text {
+}
+
+.setting__btn {
+}
+
+.setting__image {}
