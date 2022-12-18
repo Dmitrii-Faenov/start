@@ -341,3 +341,34 @@ h2 {
 }
 
 .team__btn {}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.footer {
+    background-color: var(--1st-color-100);
+    color: var(--3th-color-100);
+    padding: 51px 131px 49px 131px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-media-container {
+    display: flex;
+}
+
+.footer__link {
+}
+
+.footer__link:not(:last-child) {
+    margin: 0 20px 0 0;
+}
+
+.footer__social-media-img {
+}
+
+.footer__copy {
+    font: var(--sub-heading);
+}
