@@ -93,6 +93,8 @@ h2 {
 .label {
     font: var(--label);
     letter-spacing: var(--label-ls);
+    text-transform: uppercase;
+    color: var(--1st-color-100);
 }
 
 .sub-heading {
@@ -285,3 +287,57 @@ h2 {
 }
 
 .setting__image {}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.team {
+    text-align: center;
+    margin: 0 0 54px 0;
+}
+
+.team__container {}
+
+.team__info-block {
+    width: 403px;
+    margin: 0 auto 45px auto;
+}
+
+.team__info-block > *:not(:last-child) {
+    margin: 0 0 16px 0;
+}
+
+.team__label {}
+
+.team__heading {}
+
+.team__text {}
+
+.team__cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 45px 0;
+}
+
+.team__card {
+    text-align: left;
+    padding: 20px 39px 19px 38px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.team__avatar {
+    margin: 0 0 19px 0;
+}
+
+.team__name {
+    font: var(--heading-4);
+    margin: 0 0 17px 0;
+}
+
+.team__position {
+    font: var(--body);
+    color: var(--2nd-color-75);
+    text-transform: uppercase;
+}
+
+.team__btn {}
