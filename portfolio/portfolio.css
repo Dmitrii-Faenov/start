@@ -1,0 +1,52 @@
+/* Main CSS File */
+@import "../style.css";
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Main Code */
+
+/* Navbar */
+
+.nav {
+    margin: 0 0 30px 0;
+}
+
+
+/* Works */
+
+.works {
+    margin: 0 0 99px 0;
+}
+
+.works__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.works__text-block {
+    margin: 0 0 82px 0;
+}
+
+.works__label {}
+
+.works__heading {}
+
+.works__sub-heading {}
+
+.works__projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+    margin: 0 0 64px 0;
+}
+
+.wokrs__projects-link {}
+
+.works__projects-img {}
+
+.works__btn {
+}
