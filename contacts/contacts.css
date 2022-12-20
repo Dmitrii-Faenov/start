@@ -1,0 +1,126 @@
+/* Main CSS File */
+@import "../style.css";
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Variables */
+:root {
+    /* Fonts */
+    --main-font: 15px/125% "Work Sans", sans-serif;
+    --main-font-bold: 700 15px/125% "Work Sans", sans-serif;
+    --heading-1: 700 40px/125% "Crimson Text", serif;
+    --heading-2: 700 32px/125% "Crimson Text", serif;
+    --heading-3: 700 28px/125% "Crimson Text", serif;
+    --heading-4: 700 24px/125% "Crimson Text", serif;
+    --heading-5: 700 20px/125% "Crimson Text", serif;
+    --heading-6: 700 16px/125% "Crimson Text", serif;
+    --sub-heading: 20px/125% "Work Sans", sans-serif;
+    --label: 700 16px/125% "Work Sans", sans-serif;
+    --label-ls: 5px;
+
+    /* Colors */
+    --main-color-100: rgba(116, 198, 157, 1.0);
+    --main-color-75: rgba(116, 198, 157, 0.75);
+    --main-color-50: rgba(116, 198, 157, 0.50);
+    --main-color-25: rgba(116, 198, 157, 0.25);
+    --color-2-100: rgba(33, 37, 41, 1.0);
+    --color-2-75: rgba(33, 37, 41, 0.75);
+    --color-2-50: rgba(33, 37, 41, 0.50);
+    --color-2-25: rgba(33, 37, 41, 0.25);
+    --color-3-100: rgba(255, 255, 255, 1.0);
+    --color-3-75: rgba(255, 255, 255, 0.75);
+    --color-3-50: rgba(255, 255, 255, 0.50);
+    --color-3-25: rgba(255, 255, 255, 0.25);
+}
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Main Code */
+
+
+/* Navbar */
+
+.nav {
+    margin: 0 0 30px;
+}
+
+/* Main */
+
+.main {}
+
+
+/* Main Content */
+
+.main {}
+
+
+/* Contacts */
+
+.contacts {
+    margin: 0 0 93px 0;
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__text-block {
+    text-align: center;
+    margin: 0 0 67px 0;
+}
+
+.contacts__heading {}
+
+.contacts__sub-heading {}
+
+.contacts__main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contacts__form {
+    display: flex;
+    margin: 0 30px 0 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contacts__form-label {
+    font: var(--sub-heading);
+    margin: 0 0 12px 0;
+}
+
+.contacts__form-item {
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 38px;
+    padding: 0 0 0 5px;
+}
+
+.contacts__form-item:not(:last-child) {
+    margin: 0 0 21px 0;
+}
+
+.contacts__form-item_textarea {
+    min-height: 75px;
+    max-height: 300px;
+    resize: vertical;
+
+}
+
+.contacts__map {
+    align-self: flex-start;
+}
+
+.contacts__form-btn {
+    font: var(--sub-heading);
+}
